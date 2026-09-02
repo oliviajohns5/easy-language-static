@@ -164,6 +164,7 @@ def rewrite_html(s):
     # relative php hrefs
     out = re.sub(r'href="/?([a-z0-9-]+)\.php"', lambda m: f'href="/{m.group(1)}/"', out, flags=re.I)
     out = re.sub(r'src="/?img/([^"\']+)"', lambda m: f'src="{image_map.get(BASE+"/img/"+m.group(1), "/images/"+clean_name(m.group(1)))}"', out, flags=re.I)
+    out = out.replace('src="images/', 'src="/images/')
     out = re.sub(r'<img\b(?![^>]*loading=)', '<img loading="lazy" decoding="async"', out, flags=re.I)
     out = re.sub(r'\s+', ' ', out)
     return out.strip()

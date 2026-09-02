@@ -40,19 +40,26 @@ const jsonLd = {
     <header class="site-header">
       <div class="wrap topbar">
         <a class="logo" href="/" aria-label="Easy Language home">
-          <span class="logo-main">Easy Language</span>
-          <span class="logo-sub">Школа иностранных языков</span>
+          <img src="/images/easy-language-logo.svg" alt="Easy Language — Школа иностранных языков" width="420" height="132" />
         </a>
         <div class="contacts">
           <a href="tel:+380444558510" class="phone">(044) 455-85-10</a>
           <a class="cta" href="/order/">Отправить заявку</a>
         </div>
       </div>
-      <nav class="main-nav" aria-label="Основная навигация">
+      <nav class="main-nav desktop-nav" aria-label="Основная навигация">
         <div class="wrap nav-inner">
           {nav.map(([href, label]) => <a href={href}>{label}</a>)}
         </div>
       </nav>
+      <div class="mobile-nav-wrap">
+        <details class="mobile-menu">
+          <summary><span>Меню сайта</span><b aria-hidden="true">⌄</b></summary>
+          <div class="mobile-menu-panel">
+            {nav.map(([href, label]) => <a href={href}>{label}</a>)}
+          </div>
+        </details>
+      </div>
     </header>
     <main id="content" class="wrap shell">
       <slot />

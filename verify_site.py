@@ -33,7 +33,7 @@ for page in pages:
         if src.startswith('/images/'):
             img=DIST/src.lstrip('/')
             if not img.exists(): errors.append(f'missing image {src}')
-            if img.suffix!='.webp': errors.append(f'non-webp {src}')
+            if img.suffix not in {'.webp', '.svg'}: errors.append(f'non-webp/svg {src}')
         elif src.startswith('/'): errors.append(f'unexpected local image {src}')
 for p in pages:
     if p['canonical'] not in (DIST/'sitemap.xml').read_text(): errors.append(f'sitemap missing {p["canonical"]}')
@@ -42,8 +42,8 @@ for old in ['/about.php','/languages.php','/english-courses.php','/order.php']:
 imgs=sorted((DIST/'images').glob('*'))
 if len(imgs) < 20: errors.append(f'too few images {len(imgs)}')
 for img in imgs:
-    if img.suffix!='.webp': errors.append(f'non-webp file {img.name}')
-    if re.search(r'\.(jpg|jpeg|png|gif)$|flag\d|sub\d|^[abc]\d', img.name, re.I): errors.append(f'unclean image name {img.name}')
+    if img.suffix not in {'.webp', '.svg'}: errors.append(f'non-webp/svg file {img.name}')
+    if img.suffix == '.webp' and re.search(r'\.(jpg|jpeg|png|gif)$|flag\d|sub\d|^[abc]\d', img.name, re.I): errors.append(f'unclean image name {img.name}')
 if errors:
     print('\n'.join(errors)); sys.exit(1)
 print(json.dumps({'pages_checked':len(pages),'images_checked':len(imgs),'redirects':len(redirects)},indent=2,ensure_ascii=False))

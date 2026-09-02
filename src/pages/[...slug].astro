@@ -13,11 +13,33 @@ const { page } = Astro.props;
 <BaseLayout page={page}>
   <article class="content-card">
     <p class="breadcrumb"><a href="/">Главная</a>{page.path !== '/' && <> → {page.h1}</>}</p>
-    <div class="hero-band">
-      <span class="kicker">Easy Language</span>
-      <h1>{page.h1}</h1>
-      <p>{page.description}</p>
-    </div>
+    {page.path === '/' ? (
+      <section class="home-hero">
+        <div class="home-hero-copy">
+          <span class="kicker">Easy Language · Киев и онлайн</span>
+          <h1>{page.h1}</h1>
+          <p>{page.description}</p>
+          <div class="hero-actions">
+            <a class="cta hero-cta" href="/order/">Записаться на пробный урок</a>
+            <a class="secondary-link" href="/languages/">Посмотреть языки</a>
+          </div>
+          <ul class="hero-points">
+            <li>Английский, немецкий, французский, испанский и другие языки</li>
+            <li>Индивидуальные, групповые и корпоративные занятия</li>
+            <li>Офлайн в Киеве и онлайн-формат</li>
+          </ul>
+        </div>
+        <div class="home-hero-art">
+          <img src="/images/hero-language-learning.svg" alt="Иллюстрация обучения иностранным языкам" width="1120" height="680" fetchpriority="high" />
+        </div>
+      </section>
+    ) : (
+      <div class="hero-band">
+        <span class="kicker">Easy Language</span>
+        <h1>{page.h1}</h1>
+        <p>{page.description}</p>
+      </div>
+    )}
     <div class="content" set:html={page.contentHtml} />
   </article>
 </BaseLayout>
