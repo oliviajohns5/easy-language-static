@@ -1,0 +1,82 @@
+---
+import '../styles/global.css';
+import pages from '../content/pages.json';
+import SearchBox from '../components/SearchBox.jsx';
+
+const { page } = Astro.props;
+const nav = [
+  ['/', 'Главная'], ['/about/', 'О нас'], ['/languages/', 'Языки'],
+  ['/english-corporate-lessons/', 'Корпоративное обучение'], ['/repetitor-english-kiev/', 'Индивидуальные занятия'],
+  ['/methods/', 'Методика'], ['/guarantees/', 'Гарантии'], ['/faq/', 'FAQ'], ['/order/', 'Заявка']
+];
+const coursePages = pages.filter((p) => p.path.includes('courses') || p.path.includes('lessons'));
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOrganization',
+  name: 'Easy Language',
+  url: 'https://easy-language.com.ua/',
+  telephone: '+380444558510',
+  email: 'e@easy-language.com.ua',
+  address: { '@type': 'PostalAddress', addressCountry: 'UA', addressLocality: 'Киев', streetAddress: 'бул. Тараса Шевченко 2, офис 4' }
+};
+---
+<!doctype html>
+<html lang="ru-UA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{page.title}</title>
+    <meta name="description" content={page.description} />
+    <link rel="canonical" href={page.canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_UA" />
+    <meta property="og:site_name" content="Easy Language" />
+    <meta property="og:title" content={page.title} />
+    <meta property="og:description" content={page.description} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip" href="#content">Перейти к содержанию</a>
+    <header class="site-header">
+      <div class="wrap topbar">
+        <a class="logo" href="/" aria-label="Easy Language home">
+          <span class="logo-main">Easy Language</span>
+          <span class="logo-sub">Школа иностранных языков</span>
+        </a>
+        <div class="contacts">
+          <a href="tel:+380444558510" class="phone">(044) 455-85-10</a>
+          <a class="cta" href="/order/">Отправить заявку</a>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <div class="wrap nav-inner">
+          {nav.map(([href, label]) => <a href={href}>{label}</a>)}
+        </div>
+      </nav>
+    </header>
+    <main id="content" class="wrap shell">
+      <slot />
+      <aside class="sidebar" aria-label="Дополнительная навигация">
+        <SearchBox client:load pages={pages.map((p) => ({ title: p.h1, path: p.path, description: p.description }))} />
+        <section class="panel">
+          <h2>Популярные курсы</h2>
+          <ul>
+            {coursePages.slice(0, 8).map((p) => <li><a href={p.path}>{p.h1}</a></li>)}
+          </ul>
+        </section>
+        <section class="panel contact-panel">
+          <h2>Контакты</h2>
+          <p><strong>Телефон:</strong><br /><a href="tel:+380444558510">(044) 455-85-10</a></p>
+          <p><strong>Email:</strong><br /><a href="mailto:e@easy-language.com.ua">e@easy-language.com.ua</a></p>
+          <p><strong>Адрес:</strong><br />Украина, Киев, бул. Тараса Шевченко 2, офис 4</p>
+        </section>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <strong>Easy Language</strong>
+        <span>Курсы иностранных языков в Киеве и онлайн</span>
+      </div>
+    </footer>
+  </body>
+</html>

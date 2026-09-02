@@ -1,0 +1,341 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/order.php",
+      "destination": "/order/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about.php",
+      "destination": "/about/",
+      "statusCode": 301
+    },
+    {
+      "source": "/languages.php",
+      "destination": "/languages/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-corporate-lessons.php",
+      "destination": "/english-corporate-lessons/",
+      "statusCode": 301
+    },
+    {
+      "source": "/repetitor-english-kiev.php",
+      "destination": "/repetitor-english-kiev/",
+      "statusCode": 301
+    },
+    {
+      "source": "/methods.php",
+      "destination": "/methods/",
+      "statusCode": 301
+    },
+    {
+      "source": "/guarantees.php",
+      "destination": "/guarantees/",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq.php",
+      "destination": "/faq/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-courses.php",
+      "destination": "/english-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/german-courses.php",
+      "destination": "/german-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/french-courses.php",
+      "destination": "/french-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/spanish-courses.php",
+      "destination": "/spanish-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/online-english-lessons.php",
+      "destination": "/online-english-lessons/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-lessons-for-children.php",
+      "destination": "/english-lessons-for-children/",
+      "statusCode": 301
+    },
+    {
+      "source": "/english-lessons-for-beginners.php",
+      "destination": "/english-lessons-for-beginners/",
+      "statusCode": 301
+    },
+    {
+      "source": "/italian-courses.php",
+      "destination": "/italian-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/arabic-courses.php",
+      "destination": "/arabic-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chinese-courses.php",
+      "destination": "/chinese-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/turkish-courses.php",
+      "destination": "/turkish-courses/",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/a1.jpg",
+      "destination": "/images/classroom-adults.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/a2.jpg",
+      "destination": "/images/classroom-speaking.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/b1.jpg",
+      "destination": "/images/teacher-session.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/b2.jpg",
+      "destination": "/images/student-notes.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/bg.png",
+      "destination": "/images/background-pattern.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/bul.png",
+      "destination": "/images/bullet.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/bul1.png",
+      "destination": "/images/bullet-alt.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/c1.jpg",
+      "destination": "/images/language-class.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/c2.jpg",
+      "destination": "/images/conversation-practice.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/chang.jpeg",
+      "destination": "/images/chang.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/easy.png",
+      "destination": "/images/easy-logo.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/f-bot.png",
+      "destination": "/images/footer-bottom.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/f-mail.png",
+      "destination": "/images/footer-mail.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/f-phone.png",
+      "destination": "/images/footer-phone.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/f-top.png",
+      "destination": "/images/footer-top.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/f.png",
+      "destination": "/images/footer-bg.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/faq.png",
+      "destination": "/images/faq-icon.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag1.png",
+      "destination": "/images/flag-english.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag2.png",
+      "destination": "/images/flag-german.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag3.png",
+      "destination": "/images/flag-french.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag4.png",
+      "destination": "/images/flag-spanish.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag5.png",
+      "destination": "/images/flag-italian.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag6.png",
+      "destination": "/images/flag-arabic.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag7.png",
+      "destination": "/images/flag-chinese.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/flag8.png",
+      "destination": "/images/flag-turkish.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/form.png",
+      "destination": "/images/form-bg.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/frolenkov.jpg",
+      "destination": "/images/frolenkov.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/h1.png",
+      "destination": "/images/easy-language-logo.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/kay.JPG",
+      "destination": "/images/kay.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/l.png",
+      "destination": "/images/nav-left.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/maceha.jpeg",
+      "destination": "/images/maceha.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/nav.png",
+      "destination": "/images/navigation-bg.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/none.png",
+      "destination": "/images/placeholder.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/phone.png",
+      "destination": "/images/phone-icon.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/prep.png",
+      "destination": "/images/teachers.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/r.png",
+      "destination": "/images/nav-right.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sep.png",
+      "destination": "/images/sep.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/strapko.jpg",
+      "destination": "/images/strapko.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub1.jpg",
+      "destination": "/images/english-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub2.jpg",
+      "destination": "/images/german-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub3.jpg",
+      "destination": "/images/french-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub4.jpg",
+      "destination": "/images/spanish-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub5.jpg",
+      "destination": "/images/italian-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub6.jpg",
+      "destination": "/images/arabic-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/sub7.jpg",
+      "destination": "/images/chinese-course.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/trionika.png",
+      "destination": "/images/trionika.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/vasileva.jpg",
+      "destination": "/images/vasileva.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/img/zayavka.png",
+      "destination": "/images/application-button.webp",
+      "statusCode": 301
+    }
+  ]
+}

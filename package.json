@@ -1,0 +1,19 @@
+{
+  "name": "easy-language-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "import:site": "python3 import_site.py",
+    "verify": "python3 verify_site.py"
+  },
+  "dependencies": {
+    "@astrojs/react": "latest",
+    "astro": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}

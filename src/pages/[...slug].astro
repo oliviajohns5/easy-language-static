@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import pages from '../content/pages.json';
+
+export async function getStaticPaths() {
+  return pages.map((page) => ({
+    params: { slug: page.path === '/' ? undefined : page.path.replace(/^\//, '').replace(/\/$/, '') },
+    props: { page }
+  }));
+}
+const { page } = Astro.props;
+---
+<BaseLayout page={page}>
+  <article class="content-card">
+    <p class="breadcrumb"><a href="/">Главная</a>{page.path !== '/' && <> → {page.h1}</>}</p>
+    <div class="hero-band">
+      <span class="kicker">Easy Language</span>
+      <h1>{page.h1}</h1>
+      <p>{page.description}</p>
+    </div>
+    <div class="content" set:html={page.contentHtml} />
+  </article>
+</BaseLayout>
