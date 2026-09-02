@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="132" viewBox="0 0 420 132" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="132" viewBox="0 0 540 132" role="img" aria-labelledby="title desc">
   <title id="title">Easy Language logo</title>
   <desc id="desc">Blue and orange Easy Language mark with speech bubbles</desc>
   <defs>
@@ -11,10 +11,10 @@
       <stop offset="1" stop-color="#f06c1d"/>
     </linearGradient>
   </defs>
-  <rect x="6" y="8" width="116" height="116" rx="30" fill="url(#g)"/>
-  <path d="M35 38h50c13 0 22 8 22 20s-9 20-22 20H62L43 96v-18h-8c-13 0-22-8-22-20s9-20 22-20z" fill="white" opacity=".96"/>
-  <path d="M55 54h42M55 66h30" stroke="#145984" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="104" cy="30" r="18" fill="url(#o)"/>
-  <text x="144" y="63" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#1e78b7" letter-spacing="-2">Easy Language</text>
-  <text x="148" y="94" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#63758a">Школа иностранных языков</text>
+  <rect x="8" y="12" width="104" height="104" rx="28" fill="url(#g)"/>
+  <path d="M34 40h47c12 0 21 8 21 19s-9 19-21 19H61L43 95V78h-9c-12 0-21-8-21-19s9-19 21-19z" fill="white" opacity=".96"/>
+  <path d="M52 55h40M52 67h28" stroke="#145984" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="106" cy="34" r="18" fill="url(#o)"/>
+  <text x="132" y="61" font-family="Georgia, 'Times New Roman', serif" font-size="39" font-weight="700" fill="#1e78b7" letter-spacing="-1.4">Easy Language</text>
+  <text x="136" y="91" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#63758a">Школа иностранных языков</text>
 </svg>
